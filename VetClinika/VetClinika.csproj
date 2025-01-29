@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB04300A-52A0-4B37-9FF8-0AF7A38C410C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VetClinika</RootNamespace>
+    <AssemblyName>VetClinika</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClienti.Designer.cs">
+      <DependentUpon>FormClienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDanOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDanOrg.Designer.cs">
+      <DependentUpon>FormDanOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDobHoz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDobHoz.Designer.cs">
+      <DependentUpon>FormDobHoz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOkUsl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOkUsl.Designer.cs">
+      <DependentUpon>FormOkUsl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPosVet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosVet.Designer.cs">
+      <DependentUpon>FormPosVet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReitSotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReitSotr.Designer.cs">
+      <DependentUpon>FormReitSotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReitUsl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReitUsl.Designer.cs">
+      <DependentUpon>FormReitUsl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSotr.Designer.cs">
+      <DependentUpon>FormSotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUslGiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUslGiv.Designer.cs">
+      <DependentUpon>FormUslGiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUslugi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUslugi.Designer.cs">
+      <DependentUpon>FormUslugi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZanSotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZanSotr.Designer.cs">
+      <DependentUpon>FormZanSotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClienti.resx">
+      <DependentUpon>FormClienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDanOrg.resx">
+      <DependentUpon>FormDanOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDobHoz.resx">
+      <DependentUpon>FormDobHoz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOkUsl.resx">
+      <DependentUpon>FormOkUsl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosVet.resx">
+      <DependentUpon>FormPosVet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReitSotr.resx">
+      <DependentUpon>FormReitSotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReitUsl.resx">
+      <DependentUpon>FormReitUsl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSotr.resx">
+      <DependentUpon>FormSotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUslGiv.resx">
+      <DependentUpon>FormUslGiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUslugi.resx">
+      <DependentUpon>FormUslugi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZanSotr.resx">
+      <DependentUpon>FormZanSotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VetDB.mdf" />
+    <Content Include="VetDB_log.ldf">
+      <DependentUpon>VetDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
