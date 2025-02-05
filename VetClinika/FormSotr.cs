@@ -119,5 +119,10 @@ namespace VetClinika
             textBox3.Text = "";
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Удаление
+        }
     }
 }
